@@ -1,0 +1,33 @@
+@page
+@using System.Text.Json
+@using Domain
+@using Helpers
+@model ChoosePlayerModel
+@{
+    ViewData["Title"] = "Choose a Player";
+}
+
+<p class="text-center text-4xl font-extrabold mb-10 tracking-normal leading-loose text-pink-900">Choose a Player</p>
+
+<div class="mx-auto max-w-2xl">
+    @if (Model.Players != null && Model.Players.Any())
+    {
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            @foreach (var player in Model.Players)
+            {
+                <div class="bg-white rounded-lg shadow-md p-4 font-sans">
+                    <p class="text-lg font-semibold mb-2">@player.NickName</p>
+                    <p class="text-sm mb-2 text-gray-500">@player.PlayerType</p>
+                    <a asp-page="/GamePlayerView" asp-route-gameId="@Model.GameId" asp-route-playerNickname="@player.NickName"
+                       class="text-white rounded hover:bg-pink-600 focus:outline-none focus:ring focus:border-pink-300 bg-pink-500 px-4 py-2">
+                        Select
+                    </a>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No players available.</p>
+    }
+</div>

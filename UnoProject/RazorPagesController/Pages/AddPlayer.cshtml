@@ -1,0 +1,24 @@
+@page
+@model AddPLayerModel
+
+@{
+    ViewData["Title"] = "Add player";
+}
+
+<p class="text-center text-4xl font-extrabold mb-10 tracking-normal leading-loose text-pink-900">Add Player</p>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="name" class="control-label"></label>
+        <input asp-for="name" class="form-control" />
+        <span asp-validation-for="name" class="text-danger"></span>
+    </div>
+    <label asp-for="Type">Select an option:</label>
+    <select asp-for="Type" asp-items="Model.Options" class="form-control">
+        <option value="">Select...</option>
+    </select>
+    
+    <input type="hidden" name="GameId" value="@Model.State.Id"/>
+
+    <button type="submit" class="inline-flex border border-pink-500 focus:outline-none focus:ring-2 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-2 text-white justify-center rounded-md py-4
+                                     px-6 bg-pink-600 text-lg font-semibold shadow-sm tracking-normal">Submit</button>
+</form>

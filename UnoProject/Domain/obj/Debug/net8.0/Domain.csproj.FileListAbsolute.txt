@@ -1,0 +1,11 @@
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/bin/Debug/net8.0/Domain.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/Domain.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Domain/obj/Debug/net8.0/ref/Domain.dll

@@ -1,0 +1,29 @@
+﻿@page
+@model RazorPagesController.Pages.IndexModel
+@{
+    ViewData["Title"] = "Uno Home";
+}
+
+<div class="mt-40 container content-center">
+    <div class="grid grid-cols-2 place-content-cente">
+        <div class="text-center h-10 row-span-3">
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div class="mx-auto py-12 px-6 container">
+    <p class="text-center text-6xl font-extrabold mb-10 tracking-normal leading-loose text-pink-900">Welcome to Uno Game</p>
+    <div class="items-center justify-center flex-col flex">
+        <a asp-page="/GamesPage">
+            <button class="inline-flex border border-pink-500 focus:outline-none
+            focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 hover:bg-pink-700 text-white justify-center rounded-md py-4
+            px-8 bg-pink-600 text-lg font-semibold shadow-sm mb-4 tracking-normal">Join a Game</button>
+        </a>
+        <a asp-page="/CreateGame">
+            <button class="inline-flex border border-pink-500 focus:outline-none
+            focus:ring-2 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-2 text-white justify-center rounded-md py-4
+            px-6 bg-pink-600 text-lg font-semibold shadow-sm tracking-normal">Start a New Game</button>
+        </a>
+    </div>
+</div>

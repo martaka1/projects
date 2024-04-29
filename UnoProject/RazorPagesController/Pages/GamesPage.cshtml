@@ -1,0 +1,42 @@
+@page
+@using System.Text.Json
+@using Domain
+@using Helpers
+@model GamesPageModel
+@{
+    ViewData["Title"] = "Games List";
+}
+
+<p class="text-center text-4xl font-extrabold mb-10 tracking-normal leading-loose text-pink-900">Games List</p>
+
+<div class="mx-auto max-w-2xl">
+    @if (Model.Game != null && Model.Game.Count > 0)
+    {
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            @foreach (var game in Model.Game)
+            {
+                <div class="bg-white rounded-lg shadow-md p-4 font-sans">
+                    <p class="text-lg font-thin mb-2">
+                        @if (game.Players != null && game.Players.Any())
+                        {
+                            @string.Join("-", game.Players.Select(p => p.NickName))
+                        }
+                        else
+                        {
+                            <span>No players</span>
+                        }
+                    </p>
+                    <p class="text-sm mb-2 text-gray-500">Status: @(game.isOver ? "Finished" : "Ongoing")</p>
+                    <a asp-page="/ChoosePlayer" asp-route-gameId="@game.Id"
+                       class="text-white rounded hover:bg-pink-600 focus:outline-none focus:ring focus:border-pink-300 bg-pink-500 px-4 py-2">
+                        Join
+                    </a>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No games available.</p>
+    }
+</div>

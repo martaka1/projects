@@ -1,0 +1,47 @@
+@page
+@model NewGameModel
+@{
+    ViewData["Title"] = "NewGame";
+}
+<p class="text-center text-4xl font-extrabold mb-10 tracking-normal leading-loose text-pink-900">Create Game</p>
+<div class="grid grid-rows-2 grid-cols-3 content-center gap-5">
+    <div class="">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GameOptions.HandSize" class="control-label"></label>
+                <input asp-for="GameOptions.HandSize" class="form-control" />
+                <span asp-validation-for="GameOptions.HandSize" class="text-danger"></span>
+            </div>
+
+            
+            <input type="hidden" asp-for="State.Id" />
+            <div class="form-group">
+                <input type="submit" value="Save Config" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mb-auto">
+        @foreach (var player in Model.State.Players)
+        {
+            <div>
+                <a>@player.NickName</a>
+            </div>
+            <div class="text-right text-red-300">
+                <a class="hover:text-red-400" asp-page="./DeletePlayer" asp-route-Gameid="@Model.State.Id" asp-route-PlayerName="@player.NickName">Delete Player</a>
+            </div>
+        }
+    </div>
+    <div>
+            @{
+                if (Model.State.Players.Count <= Model.State.MaxPlayers && Model.State.Players.Count>=2) 
+                {
+                    <a class="inline-flex border border-pink-500 focus:outline-none focus:ring-2 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-2 text-white justify-center rounded-md py-4 px-6 bg-pink-600 text-lg font-semibold shadow-sm tracking-normal" asp-page="./Start" asp-route-id="@Model.State.Id">Start Game</a>
+                }
+                @if (Model.State.MaxPlayers > Model.State.Players.Count)
+                {
+                    <a class="inline-flex border border-pink-500 focus:outline-none focus:ring-2 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-2 text-white justify-center rounded-md py-4 px-6 bg-pink-600 text-lg font-semibold shadow-sm tracking-normal" asp-page="./AddPlayer" asp-route-id="@Model.Game.Id">Add Player</a>
+                }
+            }
+        </div>
+</div>

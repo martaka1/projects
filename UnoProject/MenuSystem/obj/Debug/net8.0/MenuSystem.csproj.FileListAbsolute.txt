@@ -1,0 +1,11 @@
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/bin/Debug/net8.0/MenuSystem.deps.json
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/bin/Debug/net8.0/MenuSystem.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/bin/Debug/net8.0/MenuSystem.pdb
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/MenuSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/MenuSystem.AssemblyInfoInputs.cache
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/MenuSystem.AssemblyInfo.cs
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/MenuSystem.csproj.CoreCompileInputs.cache
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/MenuSystem.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/refint/MenuSystem.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/MenuSystem.pdb
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/MenuSystem/obj/Debug/net8.0/ref/MenuSystem.dll

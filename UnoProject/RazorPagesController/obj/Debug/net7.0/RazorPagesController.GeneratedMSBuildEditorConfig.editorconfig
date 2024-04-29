@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RazorPagesController
+build_property.RootNamespace = RazorPagesController
+build_property.ProjectDir = /Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/AddPlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkUGxheWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/ChoosePlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hvb3NlUGxheWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/ColorChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29sb3JDaGFuZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/CreateGame.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlR2FtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/DeletePlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVsZXRlUGxheWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/GamePlayerView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2FtZVBsYXllclZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/GamePutPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2FtZVB1dFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/GamesPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2FtZXNQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/NewGame.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmV3R2FtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/Start.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/WinPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2luUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/RazorPagesController/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9k15kmevob

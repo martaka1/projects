@@ -1,0 +1,11 @@
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/bin/Debug/net7.0/Helpers.deps.json
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/bin/Debug/net7.0/Helpers.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/bin/Debug/net7.0/Helpers.pdb
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/Helpers.GeneratedMSBuildEditorConfig.editorconfig
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/Helpers.AssemblyInfoInputs.cache
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/Helpers.AssemblyInfo.cs
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/Helpers.csproj.CoreCompileInputs.cache
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/Helpers.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/refint/Helpers.dll
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/Helpers.pdb
+/Users/martakask/RiderProjects/icd0008-23f/UnoConsoleApp/UnoProject/Helpers/obj/Debug/net7.0/ref/Helpers.dll

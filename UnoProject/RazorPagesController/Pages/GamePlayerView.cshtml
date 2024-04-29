@@ -1,0 +1,112 @@
+@page
+@using Domain
+@model GamePlayerViewModel
+@{
+    ViewData["Title"] = "Player View";
+    if (Model.Engine.GetState().OnTable != null)
+    {
+        Model.BgColor = Model.Engine.GetState().OnTable.CardColor switch
+            {
+                ECardColor.Green => "bg-green-500",
+                ECardColor.Blue => "bg-blue-600",
+                ECardColor.Red => "bg-red-500",
+                ECardColor.Yellow => "bg-yellow-400",
+                _ => "bg-black"
+                };
+    }
+    
+    var currentPlayer = "";
+    if (Model.Engine.GetCurrentPlayer().NickName.Equals(Model.PlayerNickname))
+    {
+        currentPlayer = "Your turn please select a card";
+    }
+    else
+    {
+        currentPlayer = $"{Model.Engine.GetCurrentPlayer().NickName}'s turn";
+    }
+    var index = 0;
+}
+
+<p class="text-center text-4xl font-extrabold mb-10 tracking-normal leading-loose text-pink-900">Game Player View</p>
+<p class="text-2xl mb-10">
+    @currentPlayer
+</p>
+<p>Total Players:</p>
+@foreach (var player in @Model.Engine.GetState().Players)
+{
+    <p>@player.NickName has @player.PlayerHand.Count cards</p>
+}
+@if (Model.Engine.GetState().OnTable != null)
+{
+    <div class="@Model.BgColor h-60 w-60 grid content-center mx-20 rounded-lg border-solid border-4 border-black">
+                <div class="">
+                    <div class=" grid grid-cols-3 text-center text-4xl">
+                        <div></div>
+                        @if (@Model.Engine.GetState().OnTable.CardValue == ECardValue.ValueColorChanged)
+                        {
+                            <div class="text-center rounded-full bg-white h-30 w-20">
+                                
+                            </div>
+                        }
+                        else
+                        {
+                          <div class="text-center rounded-full bg-white h-30 w-20">
+                                                  @Model.Engine.GetState().OnTable.GetValue()
+                                                  </div>  
+                        }
+                    </div>
+                </div>
+    
+        </div>
+}
+
+<div class="grid grid-cols-3 gap-4 mx-80 my-10">
+    <div class="col-span-1">
+        <div class=" right-0 mt-4 mr-4">
+            <a asp-page="./GamePutPage" asp-route-CardIndexNew=@index asp-route-GameidNew="@Model.GameId" asp-route-PlayerNameNew="@Model.PlayerNickname" asp-route-PickCardNew="True"
+               class="inline-flex border border-pink-500 focus:outline-none focus:ring-2 hover:bg-pink-700 focus:ring-pink-500 focus:ring-offset-2 text-white justify-center rounded-md py-4
+           px-6 bg-pink-600 text-lg font-semibold shadow-sm tracking-normal">Pick Card</a>
+        </div>
+        </div>
+    @foreach (var player in Model.Engine.GetState().Players)
+    {
+        if (player.NickName.Equals(Model.PlayerNickname, StringComparison.OrdinalIgnoreCase))
+        {
+            <p>@player.NickName has @(player.PlayerHand?.Count ?? 0) cards</p>
+
+            <div class="grid grid-cols-3 gap-40">
+                @foreach (var card in player.GetHand() ?? Enumerable.Empty<GameCard>())
+                {
+                    {
+                        var backgroundcolor = card.CardColor switch
+                        {
+                            ECardColor.Green => "bg-green-500",
+                            ECardColor.Blue => "bg-blue-600",
+                            ECardColor.Red => "bg-red-500",
+                            ECardColor.Yellow => "bg-yellow-400",
+                            _ => "bg-black"
+                            };
+                        var display = card.ToString();
+                        index++;
+                        <div class="col-span-1">
+                        <div class="@backgroundcolor text-center  h-40 w-40 palace-content-center grid grid-cols-1 rounded-md border-solid border-2 border-black">
+                            @if (card.CardValue is ECardValue.ValueChangeColor or ECardValue.ValueAdd4)
+                            {
+                                <a href="/ColorChange?CardIndex=@index&amp;GameId=@Model.GameId&amp;PlayerName=@Model.PlayerNickname">
+                                    <div class="mt-14 text-xl text-white">@display</div>
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="/GamePutPage?CardIndexNew=@index&amp;GameidNew=@Model.GameId&amp;PlayerNameNew=@Model.PlayerNickname&amp;PickCardNew=False">
+                                    <div class="mt-14 text-xl">@display</div>
+                                </a>
+                            }
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        }
+    }
+</div>
